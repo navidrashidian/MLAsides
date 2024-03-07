@@ -36,8 +36,8 @@
 \usepackage[hmargin=2cm,vmargin=2.5cm]{geometry} % Set small margins for handout
 
 % BibTeX setup
-%\usepackage[backend=bibtex, bibstyle=alphabetic, citestyle=alphabetic]{biblatex}
-%\bibliography{samplebibfile}
+\usepackage[backend=bibtex, bibstyle=alphabetic, citestyle=alphabetic]{biblatex}
+\bibliography{samplebibfile}
 
 \usepackage[english]{babel} % English
 % \usepackage[ngerman]{babel} % German
@@ -51,8 +51,6 @@
 \usepackage{amsthm}
 
 \usepackage{graphicx} % to include graphics with \includegraphics[options]{imagefile}
-
-\usepackage{csquotes}
 
 % Hyperref is great, but sometimes there are problems if packages are loaded before or after hyperref. Check the documentation.
 \usepackage{hyperref} % For PDF links, toc, etc.
@@ -112,61 +110,50 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Titlepage setup
-\title{The Emergence of Proof: A Conceptual History} % Put yout topic name here
-\subtitle{subtitle} % Put name of seminar and the current semester here. For example: "Seminar on interesting questions (SS 18)"
-\author{Navid Rashidian} % Put your name here
+\title{TITLE HERE} % Put yout topic name here
+\subtitle{SEMINAR NAME HERE (SEMESTER HERE)} % Put name of seminar and the current semester here. For example: "Seminar on interesting questions (SS 18)"
+\author{AUTHOR NAME HERE} % Put your name here
 \date{DATE HERE} % The date of your presentation
 
 
 % Start of document
 \begin{document}
 %\input{KITheader_german.tex} % german header
-%\input{KITheader_english.tex} % english header
+\input{KITheader_english.tex} % english header
 %\maketitle % standard header (without KIT logo, etc)
 
-\vspace{\baselineskip}
 
-\begin{center}
-\makeatletter
-{\Large\bfseries\@title\\}
-\vspace{\baselineskip}
-{
-%\@subtitle{}\\
-\@author\\
-\@date
-\makeatother
-}
-\end{center}
-
-\vspace{\baselineskip}
+\begin{abstract}
+ABSTRACT HERE, i.e., a short summary of your topic.
+\end{abstract}
 
 
-%\begin{abstract}
-%ABSTRACT HERE, i.e., a short summary of your topic.
-%\end{abstract}
-
-
-%\blockquote[cite]{
-%    This section, unlike section~\ref{sec:a-section} is not numbered.This section, unlike section~\ref{sec:a-section} is not numbered.This section, unlike section~\ref{sec:a-section} is not numbered.This section, unlike section~\ref{sec:a-section} is not numbered.This section, unlike section~\ref{sec:a-section} is not numbered.This section, unlike section~\ref{sec:a-section} is not numbered.This section, unlike section~\ref{sec:a-section} is not numbered.This section, unlike section~\ref{sec:a-section} is not numbered.This section, unlike section~\ref{sec:a-section} is not numbered.This section, unlike section~\ref{sec:a-section} is not numbered.This section, unlike section~\ref{sec:a-section} is not numbered.This section, unlike section~\ref{sec:a-section} is not numbered.This section, unlike section~\ref{sec:a-section} is not numbered.This section, unlike section~\ref{sec:a-section} is not numbered.
-%}
-
-\begin{quote}
-    The essential originality of the Greeks consisted precisely of a conscious effort to order mathematical proofs in a sequence such that passing from one link to the next leaves no room for doubt and constrains universal assent... [F]rom the first detailed texts that are known to us (and which date from the middle of the Vth century), the ideal ``canon'' of a mathematical text is properly settled. It will find its highest expression in the great classics, Euclid, Archimedes and Apollonius; the notion of proof, in these authors, differs in no way from ours. We have no texts allowing us to follow the first steps of this ``deductive method'', which seems to us already near perfection at the exact moment when we become aware of its existence.
-\end{quote}
-
-\section{Two Examples}
+\section{A section}
 \label{sec:a-section}
+
+Some text in a section.
+
+\section*{An unnumbered section}
+
+This section, unlike section~\ref{sec:a-section} is not numbered.
+This is indicated by the ``*'', i.e., \verb|\section*| instead of \verb|\section|.
+Such ``starred'' and ``unstarred'' variants also exist for many environments (and commands).
+There are subsections, subsubsections and paragraphs (and subparagraphs) for more fine-grained subdivision.
+
+\subsection*{A subsection}
+
+Some text.
+
+\subsubsection*{A subsubsection}
+
+More text.
 
 \paragraph*{A paragraph}
 
 Even more text.
 
 
-\section{The Historical Background}
-
-\section{A Conceptual Proof}
-
-\section{Prehistory}
+\section{Important hint}
 
 If you don't know \LaTeX{}, how to use math mode, environment, and so on,
 a short tutorial/introduction will be more useful than this document.
@@ -340,7 +327,11 @@ For example the ``cleveref'' package.)
 \subsection{Literature and BibTeX}
 \label{subsec:literature}
 
-
+To refer to literature, use BibTeX (which needs a bib-file) and run it (on the main document).
+The bibfile is set by \verb|\bibliography{FILENAME}| in the preamble.
+The literature inserted by the \verb|\printbibliography{}| command. (See the end of the document).
+A good source of (sample) bibfiles is \url{https://dblp.uni-trier.de}.
+Use \verb|\cite{}| (e.g., \cite{DH76} or \cite{RSA78}) or variants (see Section~\ref{subsec:packages}).
 
 
 \subsection{Packages and the Internet}
@@ -373,4 +364,6 @@ Footnotes work via the \verb|\footnote{}| command.\footnote{This is a footnote.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Content ends here
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\printbibliography{}
 \end{document}
+
