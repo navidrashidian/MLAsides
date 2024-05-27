@@ -1,0 +1,207 @@
+% arguelles v2.3.0
+% author: Michele Piazzai
+% contact: michele.piazzai@uc3m.es
+% license: MIT
+
+% Copied from GitHub: https://github.com/piazzai/arguelles
+
+\documentclass[compress,12pt]{beamer}
+
+\usetheme{Arguelles}
+
+\title{The Emergence of Proof in Ancient Greece}
+\subtitle{Proof: A thematic history \#1}
+\event{}
+\date{}
+\author{Navid Rashidian}
+\institute{University of Tehran}
+%\email{}
+%\homepage{}
+%\github{}
+
+\begin{document}
+
+\frame[plain]{\titlepage}
+
+\Section{Introduction}
+
+\begin{frame}[bg=bourbaki.png]
+    \begin{quote}
+        The essential originality of the Greeks consisted precisely of a conscious effort to order mathematical proofs in a sequence such that passing from one link to the next leaves no room for doubt and constrains universal assent... But from the first detailed texts that are known to us (and which date from the middle of the [5]th century), the ideal ``canon'' of a mathematical text is properly settled. It will find its highest expression in the great classics, Euclid, Archimedes and Apollonius; the notion of proof, in these authors, differs in no way from ours. (Nicolas Bourbaki, \emph{Éléments d'histoire des mathématiques})
+    \end{quote}
+\end{frame}
+
+\begin{frame}
+      \frametitle{Mathematics outside Greece}
+      %\framesubtitle{Subtitle here}
+      Many other civilization before and after the Greeks have made remarkable mathematical achievements:
+      \begin{itemize}
+            \item Babylonians developed methods to solve quadratic and cubic equations, computed $\sqrt 2$ to three sexagesimal places, and were aware of Pythagorean triples.
+            \item Indians discovered and studied trigonometric functions and made breakthroughs in number theory and geometry (\emph{e.g.} on integral solutions to Pell's equation $x^2-Ny^2=1$ and formulas for computing areas and volumes).
+            \item The Chinese developed and utilized several methods to approximate square and cube roots and solve simultaneous linear equations and calculated $\pi$ to six decimal digits.
+      \end{itemize}
+      But none of them put mathematics on an axiomatic basis!
+\end{frame}
+
+\begin{frame}
+    \frametitle{Public debate in ancient Greek society}
+    In ancient Greek society the public got to adjudicate almost all matters:
+    \begin{itemize}
+        \item In Greek democracies the entire citizen body had access to assemblies and political decisions were made by a council of citizens chosen randomly.
+        \item Ordinary citizens chosen by lot combined the role of judge and jury in Athenian courts.
+        \item Scientific theories were presented among the crowds in festivals.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Plato's criticism of orators}
+    \begin{quote}
+        [Socrates:] Do the orators seem to you to speak always with a view to what is best, aiming for this, namely how the citizens should be made as good as possible through their speeches: or are they too [like the poets] set on gratifying the citizens, and setting aside common interest for the sake of their own private benefit, they address the assembled people like children, trying merely to gratify them, and have no concern whatsoever whether their audience will become better or worse in consequence? (\textup{Gorgias} 502e--503a)
+    \end{quote}
+\end{frame}
+
+\section{Aristotle's Early Logic}
+
+\begin{frame}
+      \frametitle{Aristotle on his goal in the \emph{Topics}}
+      \begin{quote}
+          The goal of this study is to find a method with which we shall be able to construct deductions from acceptable premisses concerning any problem that is proposed and---when submitting to argument ourselves---will not say anything inconsistent. (\textup{Topics} 100a20--25)
+      \end{quote}
+\end{frame}
+
+\begin{frame}
+      \frametitle{Aristotle's definition of syllogism}
+      \begin{quote}
+          A \textup{[syllogism]}, then, is an argument in which, certain things being supposed, something different from the suppositions results of necessity through them. (\textup{Topics} 100a25--27)
+      \end{quote}
+\end{frame}
+
+\begin{frame}
+      \frametitle{Aristotle on the uses of dialectic}
+      \begin{quote}
+          Next in order after what we have said would be to state the number and kinds of things our study is useful for. There are, then, three of these: exercise, encounters, and the philosophical sciences. Now, that it is useful in relation to exercise is obvious at once, for if we have a method we shall be able more easily to attack whatever is proposed. And it is useful in relation to encounters because, once we have reckoned up the opinions of the public, we shall speak to them, not from the beliefs of others, but from their own beliefs, changing their minds about anything they may seem to us not to have stated well. It is useful in relation to the philosophical sciences because if we have the ability to go through the difficulties on either side we shall more readily discern the true as well as the false in any subject. (\textup{Topics} 101a25--37)
+      \end{quote}
+\end{frame}
+
+\section{Aristotle's Mature Logic}
+
+\begin{frame}
+    \frametitle{Aristotle on Logical Form}
+    \begin{quote}
+        A premiss, then, is a sentence that affirms or denies something of something, and this is either universal or particular or indeterminate. By `universal' I mean belonging to all or to none of something; by `particular', belonging to some, or not to some, or not to all; by 'indeterminate', belonging without universality or particularity, as in `of contraries there is a single science' or `pleasure is not a good'. (\textup{Prior Analytics} 24a15--22)
+    \end{quote}
+    
+\end{frame}
+
+\begin{frame}
+    \frametitle{Some abbreviation}
+    \begin{itemize}
+        \item $Aab$: $a$ belongs to all $b$
+        \item $Eab$: $a$ belongs to no $b$
+        \item $Iab$: $a$ belongs to some $b$
+        \item $Oab$: $a$ doesn't belong to some $b$
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{A simple syllogism}
+
+    A belongs to every B.\\
+    B belongs to every C.\\
+    Therefore, A belongs to every C.
+\end{frame}
+
+\begin{frame}
+    \frametitle{The three figures}
+    \begin{center}
+    \begin{tabular}{c|cc|cc|cc}\tiny
+         & \multicolumn{2}{c|}{First Figure} & \multicolumn{2}{c|}{Second Figure} & \multicolumn{2}{c}{Third Figure}  \\
+         & Pred. & Sub. & Pred. & Sub. & Pred. & Sub. \\ \hline
+         Prem. & a & b & a & b & a & c \\
+         Prem. & b & c & a & c & b & c \\
+         Conc. & a & c & b & c & a & b
+    \end{tabular}
+    \end{center}
+    \vspace{0.3cm}
+    Aristotle systematically surveys all possible combinations of two premises in each of the three figures.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Rules of conversion}
+    To prove the syllogistic moods Aristotle introduces three rules of conversion:
+    \begin{align*}
+        Eab &\to Eba \\
+        Iab &\to Iba \\
+        Aab &\to Iba
+    \end{align*}
+\end{frame}
+
+\begin{frame}
+    \frametitle{The list of all valid moods}
+    \begin{center}
+    \begin{tabular}{c|c|c}
+        First Figure & Second Figure & Third Figure \\ \hline
+        $Aab,Abc\vdash Aac$ & $Eab,Aac\vdash Ebc$ & $Aac,Abc\vdash Iab$ \\
+        $Eab,Abc\vdash Eac$ & $Aab,Eac\vdash Ebc$ & $Eac,Abc\vdash Oab$ \\
+        $Aab,Ibc\vdash Iac$ & $Eab,Iac\vdash Obc$ & $Aac,Abc\vdash Iab$ \\
+        $Eab,Ibc\vdash Oac$ & $Aab,Oac\vdash Oc$ & $Oac,Abc\vdash Oab$ \\
+        && $Oac,Abc\vdash Oab$ \\
+        && $Eac,Ibc\vdash Oab$
+    \end{tabular}
+    \end{center}
+
+    Using the conversion rules and proof by contradiction, Aristotle reduces all these moods to the first two moods of the first figure. He also provides counterexamples for all pairs of premises that ``do not syllogize.''
+\end{frame}
+
+\begin{frame}
+    \frametitle{Aristotle's metatheoretical inquiries}
+    Aristotle was not only interested in discerning valid and invalid moods, but in metatheoretical properties of his syllogistic system. He even tries to prove the completeness of his system:\vspace{0.3cm}
+    \begin{quote}
+        It is clear from what has been said that the syllogisms in these figures are perfected through the universal syllogisms in the first figure and are reduced to these. But that this will be so for any syllogism without qualification will become evident now, when we have proved that every syllogism comes about in one of those figures. (\textup{Prior Analytics} 40b18--22)
+    \end{quote}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Aristotle on demonstrative science}
+    \begin{quote}
+        [D]emonstrative understanding in particular must proceed from items which are true and primitive and immediate and more familiar than and prior to and explanatory of the conclusions... There can be a deduction even if these conditions are not met, but there canot be a demonstration---for it will not bring about understanding. (\textup{Posterior Analytics} 71b22--25)
+    \end{quote}
+
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Aristotle on demonstrative science}
+    \begin{quote}
+        I call principles in each kind those items which it is not possible to prove that they are. Now what the primitives and what the items proceeding from them mean is assumed; but that they are must be assumed for the principles and proved for the rest. E.g. we must assume what a unit is or what straight and triangle are, and also that units and magnitudes are; but we must prove everything else. (\textup{Posterior Analytics} 76a31--36)
+    \end{quote}
+\end{frame}
+
+\section{Logic in Action}
+
+\begin{frame}
+    \frametitle{Euclid's axioms}
+    \begin{quote}
+        Let the following be postulated:\\
+        \textbf{Postulate 1.}\\
+        To draw a straight line from any point to any point.\\
+        \textbf{Postulate 2.}\\
+        To produce a finite straight line continuously in a straight line.
+        \textbf{Postulate 3.}\\
+        To describe a circle with any center and radius.\\
+        \textbf{Postulate 4.}\\
+        That all right angles equal one another.\\
+        \textbf{Postulate 5.}\\
+        That, if a straight line falling on two straight lines makes the interior angles on the same side less than two right angles, the two straight lines, if produced indefinitely, meet on that side on which are the angles less than the two right angles.
+    \end{quote}
+\end{frame}
+
+\End
+
+\begin{frame}[plain, standout]
+      \centering\large
+      Thank you for your attention!
+      
+\end{frame}
+
+\end{document}

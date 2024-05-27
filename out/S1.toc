@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{\lowercase {Introduction}}{2}{0}{1}
+\beamer@sectionintoc {2}{Aristotle's Early Logic}{6}{0}{2}
+\beamer@sectionintoc {3}{Aristotle's Mature Logic}{9}{0}{3}
+\beamer@sectionintoc {4}{Logic in Action}{18}{0}{4}
